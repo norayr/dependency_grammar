@@ -1,22 +1,25 @@
 MODULE tpScanner;
 
   CONST
+    a*     = 0;
+    akesi* = a      + 1;
+    ala*   = akesi  + 1;
+    alasa* = ala    + 1;
+    ale*   = alasa  + 1;
+    anpa*  = ale    + 1;
+
     (* nouns, գոյականներ *)
-    nAkesi*       = 0;
-    nAla*         = 1; (* nothing *)
+    nouns* = {akesi, ala, anpa (* bottom *)};
 
     (* verbs, բայեր *)
-    alasa*        = 100;
+    verbs* = {alasa};
 
     (* adverbs, մակբայեր *)
 
     (* adjectives, ածականներ *)
-    adjAla*       = 300; (* no, none *)
-    adjAle*       = 301;
-    adjAnpa*      = 302;
+    adjectives* = {ala, ale, anpa(* lower part *)};
 
     (* interjections, ձայնարկութիւննե՞ր *)
-    interjA*      = 400;
-    interjAla*    = 401; (* no! *)
+    interjections* = {a, ala(* no! *)};
     
 END tpScanner.
